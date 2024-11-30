@@ -10,3 +10,111 @@ body {
   font-size: 1.6rem;
   font-family: "Sora", sans-serif;
 }
+
+/* Common */
+.container {
+  width: 1170px;
+  max-width: calc(100% - 48px);
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  min-width: 205px;
+  height: 60px;
+  border-radius: 30px;
+  background: #2e80ce;
+  border: 1px solid #2e80ce;
+  color: #fff;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 3rem; /* 166.667% */
+}
+
+.btn:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+/* Header */
+.header {
+  padding-top: 30px;
+  background: #10375c;
+  min-height: 100vh;
+}
+
+.header-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 1rem;
+  display: inline-flex;
+}
+
+.logo__text {
+  margin-left: 6px;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo__brand {
+  color: #fff;
+  line-height: 0.95em;
+  text-align: right;
+  font-weight: 400;
+  font-size: 1.8em;
+}
+
+.logo__brand--small {
+  font-size: 1.2em;
+  font-weight: 300;
+}
+
+.navbar__list {
+  display: flex;
+}
+
+.navbar__item {
+  padding: 4px 21px;
+}
+
+.navbar__link,
+.action__login {
+  color: #c9d2da;
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+
+.navbar__link:hover,
+.navbar__link--active {
+  color: #fff;
+  text-shadow: 1px 0 0 currentColor;
+}
+
+.navbar__link--active::before {
+  content: "";
+  display: inline-block;
+  position: relative;
+  left: 0;
+  top: -2px;
+  margin-right: 8px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.action__signup {
+  min-width: 104px;
+  height: 44px;
+  margin-left: 28px;
+  font-size: 1.6rem;
+  line-height: 2.8rem;
+}
