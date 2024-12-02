@@ -23,6 +23,7 @@ a {
 }
 
 .btn {
+  display: inline-block;
   min-width: 205px;
   height: 60px;
   border-radius: 30px;
@@ -32,7 +33,7 @@ a {
   text-align: center;
   font-size: 1.8rem;
   font-weight: 400;
-  line-height: 3rem; /* 166.667% */
+  line-height: 6rem;
 }
 
 .btn:hover {
@@ -81,12 +82,9 @@ a {
   display: flex;
 }
 
-.navbar__item {
-  padding: 4px 21px;
-}
-
 .navbar__link,
-.action__login {
+.header-action__login {
+  padding: 4px 21px;
   color: #c9d2da;
   font-size: 1.6rem;
   font-weight: 300;
@@ -111,10 +109,83 @@ a {
   background-color: #fff;
 }
 
-.action__signup {
+.header-action {
+  display: flex;
+  align-items: center;
+}
+
+.header-action__signup {
   min-width: 104px;
   height: 44px;
-  margin-left: 28px;
+  margin-left: 7px;
   font-size: 1.6rem;
   line-height: 2.8rem;
+}
+
+/* Hero */
+.hero {
+  margin-top: 76px;
+  display: flex;
+  align-items: center;
+}
+
+.hero__content {
+  width: 44.19%;
+  flex-shrink: 0;
+}
+
+.hero__heading {
+  color: #fff;
+  font-size: 7rem;
+  font-weight: 600;
+  line-height: 8rem;
+  letter-spacing: -1.4px;
+  margin-bottom: 22px;
+}
+
+.hero__desc {
+  color: #c9d2da;
+  font-size: 1.8rem;
+  font-weight: 300;
+  line-height: 3rem;
+  margin-bottom: 38px;
+}
+
+.hero__row {
+  display: flex;
+  align-items: center;
+}
+
+.hero__phone {
+  margin-left: 38px;
+  color: #fff;
+  font-size: 1.8rem;
+  line-height: 3rem;
+}
+
+.hero__media {
+  flex-grow: 1;
+}
+
+.hero__images {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.hero__img {
+  width: 330px;
+  height: 540px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.hero__img:first-child {
+  margin-right: -6px;
+  position: relative;
+}
+
+.hero__img:last-child {
+  width: 210px;
+  height: 410px;
 }
